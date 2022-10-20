@@ -25,7 +25,7 @@ ${LIBFT}:
 	make -C ${LDIR}
 
 ${NAME}:	${LIBFT} ${OBJS_P}
-	#${GCC} -o ${NAME} ${OBJS_P} -g -fsanitize=address
+	#${GCC} -o ${NAME} ${OBJS_P} ${LDIR}/${LIBFT} -g -fsanitize=thread
 	${GCC} -o ${NAME} ${OBJS_P} ${LDIR}/${LIBFT}
 
 clean:

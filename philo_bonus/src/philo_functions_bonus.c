@@ -6,7 +6,7 @@
 /*   By: hyun-zhe <hyun-zhe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 09:55:09 by hyun-zhe          #+#    #+#             */
-/*   Updated: 2022/03/21 10:08:56 by hyun-zhe         ###   ########.fr       */
+/*   Updated: 2022/06/07 10:43:53 by hyun-zhe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,7 @@ void	*check_death(void *arg)
 	long	current_time;
 
 	philo = (t_philo *)arg;
+	m_sleep(1000);
 	while (1)
 	{
 		current_time = get_current_time();
